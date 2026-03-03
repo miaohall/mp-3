@@ -46,7 +46,7 @@ const Content = styled.div`
 const LinkStyle = styled(Link)`
     background-color: #a2a8d3;
     font-size: calc(2px + 1.3vw);
-    color: #38598b;
+    color: White;
     padding: 1.7%;
     margin: 3% 0%;
     border-style: solid;
@@ -72,8 +72,8 @@ const CalcButtons = styled.button`
     background-color: #a2a8d3;
     font-size: calc(2px + 1.5vw);
     color: white;
-    padding: 1% 3%;
-    margin: 1% 3%;
+    padding: 1% 4%;
+    margin: 1% 2%;
     text-align: center;
     border-radius: 20px;
     border-color: #38598b;
@@ -96,8 +96,8 @@ const ClearButton = styled.button`
     border-radius: 20px;
     color: white;
     font-size: calc(2px + 1.5vw);
-    padding: 1% 3%;
-    margin: 1% 3%;
+    padding: 1% 4%;
+    margin: 1% 2%;
 
     &:hover {
         background-color: #e7eaf6;
@@ -105,6 +105,13 @@ const ClearButton = styled.button`
         border-color: #38598b;
         border-width: thick;
     }
+`;
+
+const Answer = styled.div`
+    text-align: center;
+    font-size: calc(2px + 1.5vw);
+    font-weight: bold;
+    
 `;
 
 const AllButtons = styled.div`
@@ -199,7 +206,7 @@ export default function Projects() {
                     <ClearButton onClick={reset}>Clear</ClearButton>
                 </AllButtons>
                 <br/>
-                <h4>Answer: {output}</h4>
+                <Answer>Answer: {output}</Answer>
         </ProjStyle>
     );
 }
