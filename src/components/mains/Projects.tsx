@@ -48,7 +48,7 @@ const LinkStyle = styled(Link)`
     font-size: calc(2px + 1.3vw);
     color: White;
     padding: 1.7%;
-    margin: 3% 0%;
+    margin: 3% 0;
     border-style: solid;
     border-color: #113f67;
     border-radius: 20px;
@@ -115,6 +115,7 @@ const Answer = styled.div`
 `;
 
 const AllButtons = styled.div`
+    padding: 2.5% 0;
     align-items: center;
 `;
 
@@ -186,11 +187,11 @@ export default function Projects() {
                     placeholder={`Enter a number`}
                     onChange={(e) => setInput1(e.target.value)}
                 />
-
+                <br/>
                 <br/>
                 <label htmlFor="second">Second Number:</label>
                 <input
-                    id={`first`}
+                    id={`second`}
                     value={input2}
                     placeholder={`Enter a number`}
                     onChange={(e)=>setInput2(e.target.value)}

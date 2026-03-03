@@ -62,7 +62,7 @@ function Root(){
             </ContainerStyle>
             <Footer/>
         </WrapperStyle>
-    )
+    );
 }
 
 const router = createBrowserRouter(
