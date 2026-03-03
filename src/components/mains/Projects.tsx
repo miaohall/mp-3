@@ -29,7 +29,7 @@ export default function Projects() {
                 <br/>
                 <label htmlFor="second-number">Second Number:</label>
                 <input type="text" id="second-number"/>
-                {/*insert headshot into public
+                {/*
                 <br/>
                 <button onClick="addition()">+</button>
                 <button onClick="minus()">-</button>
