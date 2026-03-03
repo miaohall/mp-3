@@ -6,7 +6,6 @@ const ExpStyle = styled.div`
     width: 70%;
     height: 100vh;
     display: flex;
-    background-color: #e7eaf6;
     flex-direction: column;
 
     @media screen and (max-width: 1000px){
