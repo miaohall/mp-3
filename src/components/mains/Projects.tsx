@@ -68,6 +68,49 @@ const LinkStyle = styled(Link)`
     }
 `;
 
+const CalcButtons = styled.button`
+    background-color: #a2a8d3;
+    font-size: calc(2px + 1.5vw);
+    color: white;
+    padding: 1% 3%;
+    margin: 1% 3%;
+    text-align: center;
+    border-radius: 20px;
+    border-color: #38598b;
+    border-style: dotted;
+    border-width: thick;
+
+    &:hover {
+        background-color: #e7eaf6;
+        color: #38598b;
+        border-color: #38598b;
+        border-width: thick;
+    }
+`;
+
+const ClearButton = styled.button`
+    background-color: #38598b;
+    border-color: #a2a8d3;
+    border-width: thick;
+    border-style: solid;
+    border-radius: 20px;
+    color: white;
+    font-size: calc(2px + 1.5vw);
+    padding: 1% 3%;
+    margin: 1% 3%;
+
+    &:hover {
+        background-color: #e7eaf6;
+        color: #38598b;
+        border-color: #38598b;
+        border-width: thick;
+    }
+`;
+
+const AllButtons = styled.div`
+    align-items: center;
+`;
+
 export default function Projects() {
     const [input1, setInput1] = useState("");
     const [input2, setInput2] = useState("");
@@ -138,7 +181,7 @@ export default function Projects() {
                 />
 
                 <br/>
-                <label htmlFor="second">second number:</label>
+                <label htmlFor="second">Second Number:</label>
                 <input
                     id={`first`}
                     value={input2}
@@ -147,15 +190,16 @@ export default function Projects() {
                 />
 
                 <br/>
-                <button onClick={addition}>+</button>
-                <button onClick={minus}>-</button>
-                <button onClick={multiply}>*</button>
-                <button onClick={divide}>/</button>
-                <button onClick={power}>**</button>
-                <button onClick={reset}>Clear</button>
-
+                <AllButtons>
+                    <CalcButtons onClick={addition}>+</CalcButtons>
+                    <CalcButtons onClick={minus}>-</CalcButtons>
+                    <CalcButtons onClick={multiply}>*</CalcButtons>
+                    <CalcButtons onClick={divide}>/</CalcButtons>
+                    <CalcButtons onClick={power}>**</CalcButtons>
+                    <ClearButton onClick={reset}>Clear</ClearButton>
+                </AllButtons>
                 <br/>
-                <h5>{output}</h5>
+                <h4>Answer: {output}</h4>
         </ProjStyle>
     );
 }
