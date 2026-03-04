@@ -39,23 +39,23 @@ function Root(){
                             element={<Home/>}
                         />
                         <Route
-                            path={'education.html'}
+                            path={'/education.html'}
                             element={<Education/>}
                         />
                         <Route
-                            path={'experiences.html'}
+                            path={'/experiences.html'}
                             element={<Experiences/>}
                         />
                         <Route
-                            path={'volunteer-work.html'}
+                            path={'/volunteer-work.html'}
                             element={<Volunteer/>}
                         />
                         <Route
-                            path={'projects.html'}
+                            path={'/projects.html'}
                             element={<Projects/>}
                         />
                         <Route
-                            path={'skills.html'}
+                            path={'/skills.html'}
                             element={<Skills/>}
                         />
                     </Routes>

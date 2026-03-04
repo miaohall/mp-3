@@ -69,19 +69,19 @@ export default function Nav() {
                     <li><LinkStyle to="/">Home</LinkStyle></li>
                 </ListItemStyle>
                 <ListItemStyle>
-                    <li><LinkStyle to="education.html">Education</LinkStyle></li>
+                    <li><LinkStyle to="/education.html">Education</LinkStyle></li>
                 </ListItemStyle>
                 <ListItemStyle>
-                    <li><LinkStyle to="experiences.html">Experiences</LinkStyle></li>
+                    <li><LinkStyle to="/experiences.html">Experiences</LinkStyle></li>
                 </ListItemStyle>
                 <ListItemStyle>
-                    <li><LinkStyle to="volunteer-work.html">Volunteering</LinkStyle></li>
+                    <li><LinkStyle to="/volunteer-work.html">Volunteering</LinkStyle></li>
                 </ListItemStyle>
                 <ListItemStyle>
-                    <li><LinkStyle to="projects.html">Projects</LinkStyle></li>
+                    <li><LinkStyle to="/projects.html">Projects</LinkStyle></li>
                 </ListItemStyle>
                 <ListItemStyle>
-                    <li><LinkStyle to="skills.html">Skills</LinkStyle></li>
+                    <li><LinkStyle to="/skills.html">Skills</LinkStyle></li>
                 </ListItemStyle>
             </ListStyle>
         </NavStyle>

@@ -107,11 +107,11 @@ const ClearButton = styled.button`
     }
 `;
 
-const Answer = styled.div`
+const Answer = styled.div<{color: string}>`
     text-align: center;
     font-size: calc(2px + 1.5vw);
     font-weight: bold;
-    
+    color: ${({ color }) => color};
 `;
 
 const AllButtons = styled.div`
@@ -123,25 +123,37 @@ export default function Projects() {
     const [input1, setInput1] = useState("");
     const [input2, setInput2] = useState("");
     const [output, setOutput] = useState(0);
+    const [color, setColor] = useState("black");
 
     function addition(){
-        setOutput(Number(input1)+Number(input2));
+        const result = Number(input1)+Number(input2);
+        changeColor(result);
+        setOutput(result);
+
     }
 
     function minus() {
-        setOutput(Number(input1)-Number(input2));
+        const result = Number(input1)-Number(input2);
+        changeColor(result);
+        setOutput(result);
     }
 
     function multiply() {
-        setOutput(Number(input1)*Number(input2));
+        const result = Number(input1)*Number(input2);
+        changeColor(result);
+        setOutput(result);
     }
 
     function divide() {
         if (Number(input2)=== 0) {
+            setColor("black");
             setOutput(NaN)
         }
         else {
-            setOutput(Number(input1)/Number(input2));
+            const result = Number(input1)/Number(input2);
+            changeColor(result);
+            setOutput(result);
+
         }
     }
 
@@ -150,15 +162,25 @@ export default function Projects() {
         for (let i=0; i<Number(input2); i++) {
             result*=Number(input1);
         }
+        changeColor(result);
         setOutput(result);
     }
 
     function reset(){
         setInput1("");
         setInput2("");
+        setColor("black");
         setOutput(0);
     }
 
+    function changeColor(res){
+        if (res < 0) {
+            setColor("red");
+        }
+        else {
+            setColor("black");
+        }
+    }
 
     return (
         <ProjStyle>
@@ -207,7 +229,7 @@ export default function Projects() {
                     <ClearButton onClick={reset}>Clear</ClearButton>
                 </AllButtons>
                 <br/>
-                <Answer>Answer: {output}</Answer>
+                <Answer color={color}>Answer: {output}</Answer>
         </ProjStyle>
     );
 }
