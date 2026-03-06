@@ -41,26 +41,23 @@ const Content = styled.div`
 export default function Education() {
     return (
         <EduStyle>
-            <div>
-                <PageTitle>EDUCATION</PageTitle>
-                <br/>
-                <School>Boston University</School>
-                <Subheaders>2023 - 2027</Subheaders>
-                <Subheaders>BS in Data Science, Minor in Computer Science | GPA: 3.88</Subheaders>
-                <br/>
-                <Subheaders>Activities:</Subheaders>
-                <Content>Edge Dance Company, Kappa Theta Pi Professional Technology Fraternity</Content>
-                <br/>
-                <Subheaders>Relevant Coursework:</Subheaders>
-                <Content>Machine Learning and AI, Web Application Development, Business Modeling with
-                    Spreadsheets, Algorithms, Database Mechanics,
-                    Linear Algebra, Probability in Computing, Statistics, Computer Systems, Discrete Math, Data
-                    Structures, Python for Data Science Applications </Content>
-                <br/>
-                <br/>
-                <School>Union County Academy for Information Technology</School>
-                <Subheaders>2019-2023</Subheaders>
-            </div>
+            <PageTitle>EDUCATION</PageTitle>
+            <br/>
+            <School>Boston University</School>
+            <Subheaders>2023 - 2027</Subheaders>
+            <Subheaders>BS in Data Science, Minor in Computer Science | GPA: 3.88</Subheaders>
+            <br/>
+            <Subheaders>Activities:</Subheaders>
+            <Content>Edge Dance Company, Kappa Theta Pi Professional Technology Fraternity</Content>
+            <br/>
+            <Subheaders>Relevant Coursework:</Subheaders>
+            <Content>Machine Learning and AI, Web Application Development, Business Modeling with Spreadsheets,
+                Algorithms, Database Mechanics, Linear Algebra, Probability in Computing, Statistics,
+                Computer Systems, Discrete Math, Data Structures, Python for Data Science Applications </Content>
+            <br/>
+            <br/>
+            <School>Union County Academy for Information Technology</School>
+            <Subheaders>2019-2023</Subheaders>
         </EduStyle>
     );
 }

@@ -107,11 +107,11 @@ const ClearButton = styled.button`
     }
 `;
 
-const Answer = styled.div<{color: string}>`
+const StyledOutput = styled.div`
     text-align: center;
     font-size: calc(2px + 1.5vw);
     font-weight: bold;
-    color: ${({ color }) => color};
+    color: ${(props) =>props.theme===true ? "red" : "black"};
 `;
 
 const AllButtons = styled.div`
@@ -123,36 +123,26 @@ export default function Projects() {
     const [input1, setInput1] = useState("");
     const [input2, setInput2] = useState("");
     const [output, setOutput] = useState(0);
-    const [color, setColor] = useState("black");
 
     function addition(){
-        const result = Number(input1)+Number(input2);
-        changeColor(result);
-        setOutput(result);
+        setOutput(Number(input1)+Number(input2));
 
     }
 
     function minus() {
-        const result = Number(input1)-Number(input2);
-        changeColor(result);
-        setOutput(result);
+        setOutput(Number(input1)-Number(input2));
     }
 
     function multiply() {
-        const result = Number(input1)*Number(input2);
-        changeColor(result);
-        setOutput(result);
+        setOutput(Number(input1)*Number(input2));
     }
 
     function divide() {
         if (Number(input2)=== 0) {
-            setColor("black");
             setOutput(NaN)
         }
         else {
-            const result = Number(input1)/Number(input2);
-            changeColor(result);
-            setOutput(result);
+            setOutput(Number(input1)/Number(input2));
 
         }
     }
@@ -162,32 +152,21 @@ export default function Projects() {
         for (let i=0; i<Number(input2); i++) {
             result*=Number(input1);
         }
-        changeColor(result);
         setOutput(result);
     }
 
     function reset(){
         setInput1("");
         setInput2("");
-        setColor("black");
         setOutput(0);
-    }
-
-    function changeColor(res){
-        if (res < 0) {
-            setColor("red");
-        }
-        else {
-            setColor("black");
-        }
     }
 
     return (
         <ProjStyle>
-                <PageTitle>PROJECTS</PageTitle>
-                <ProjName>Predicting Phishing Scams Based on URL Features</ProjName>
-                <Subheaders>Spring 2024</Subheaders>
-                <Content>This project is a Python analysis of whether a phishing scam can be
+            <PageTitle>PROJECTS</PageTitle>
+            <ProjName>Predicting Phishing Scams Based on URL Features</ProjName>
+            <Subheaders>Spring 2024</Subheaders>
+            <Content>This project is a Python analysis of whether a phishing scam can be
                     detected by it's URL contents.
                     It utilized supervised machine learning techniques (K Nearest Neighbors and Random Forest
                     classification models) with Scikit-Learn, to classify URLs as phishing or non-phishing based on
@@ -195,41 +174,41 @@ export default function Projects() {
                     We conducted statistical analyses, such as t-tests and correlation studies using Matplotlib, SciPy,
                     and NumPy.
                     We created visualizations including feature importance plots, bar charts, box plots, scatter plots,
-                    and histograms using Matplotlib, NumPy and Seaborn.</Content>
+                    and histograms using Matplotlib, NumPy and Seaborn.
+            </Content>
 
-                <LinkStyle to="https://github.com/miaohall/Phishing-URL-Scam-Detector-Analysis.git" id="proj-button">Check it
-                    out here!</LinkStyle>
+            <LinkStyle to="https://github.com/miaohall/Phishing-URL-Scam-Detector-Analysis.git">Check it out here!</LinkStyle>
 
-                <ProjName>Calculator</ProjName>
+            <ProjName>Calculator</ProjName>
 
-                <label htmlFor="first">First Number:</label>
-                <input
-                    id={`first`}
-                    value={input1}
-                    placeholder={`Enter a number`}
-                    onChange={(e) => setInput1(e.target.value)}
-                />
-                <br/>
-                <br/>
-                <label htmlFor="second">Second Number:</label>
-                <input
-                    id={`second`}
-                    value={input2}
-                    placeholder={`Enter a number`}
-                    onChange={(e)=>setInput2(e.target.value)}
-                />
+            <label htmlFor="first">First Number:</label>
+            <input
+                id={`first`}
+                value={input1}
+                placeholder={`Enter a number`}
+                onChange={(e) => setInput1(e.target.value)}
+            />
+            <br/>
+            <br/>
+            <label htmlFor="second">Second Number:</label>
+            <input
+                id={`second`}
+                value={input2}
+                placeholder={`Enter a number`}
+                onChange={(e)=>setInput2(e.target.value)}
+            />
 
-                <br/>
-                <AllButtons>
-                    <CalcButtons onClick={addition}>+</CalcButtons>
-                    <CalcButtons onClick={minus}>-</CalcButtons>
-                    <CalcButtons onClick={multiply}>*</CalcButtons>
-                    <CalcButtons onClick={divide}>/</CalcButtons>
-                    <CalcButtons onClick={power}>**</CalcButtons>
-                    <ClearButton onClick={reset}>Clear</ClearButton>
-                </AllButtons>
-                <br/>
-                <Answer color={color}>Answer: {output}</Answer>
+            <br/>
+            <AllButtons>
+                <CalcButtons onClick={addition}>+</CalcButtons>
+                <CalcButtons onClick={minus}>-</CalcButtons>
+                <CalcButtons onClick={multiply}>*</CalcButtons>
+                <CalcButtons onClick={divide}>/</CalcButtons>
+                <CalcButtons onClick={power}>**</CalcButtons>
+                <ClearButton onClick={reset}>Clear</ClearButton>
+            </AllButtons>
+            <br/>
+            <StyledOutput theme={output< 0 ? true: false}>Answer: {output}</StyledOutput>
         </ProjStyle>
     );
 }

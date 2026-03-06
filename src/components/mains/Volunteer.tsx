@@ -44,17 +44,17 @@ const Content = styled.div`
 export default function Volunteer() {
     return (
         <VolStyle>
-                <PageTitle>VOLUNTEER EXPERIENCE</PageTitle>
+            <PageTitle>VOLUNTEER EXPERIENCE</PageTitle>
 
-                <VolPlace>Volunteer at Soup Kitchen</VolPlace>
-                <Subheaders>June 2020 - Current | NJ</Subheaders>
-                <Content>Responsibilities included packaging 100+ meals, organizing and distributing diapers, formula and
+            <VolPlace>Volunteer at Soup Kitchen</VolPlace>
+            <Subheaders>June 2020 - Current | NJ</Subheaders>
+            <Content>Responsibilities included packaging 100+ meals, organizing and distributing diapers, formula and
                     groceries, and interacting with local residents and staff.</Content>
-                <br/>
-                <br/>
-                <VolPlace>Dance Teacher's Assistant and Company Mentor</VolPlace>
-                <Subheaders>Sep. 2018 - May 2023 | NJ</Subheaders>
-                <Content>Responsibilities included teaching choreography, providing corrections, interacting with dance
+            <br/>
+            <br/>
+            <VolPlace>Dance Teacher's Assistant and Company Mentor</VolPlace>
+            <Subheaders>Sep. 2018 - May 2023 | NJ</Subheaders>
+            <Content>Responsibilities included teaching choreography, providing corrections, interacting with dance
                     teachers and parents, and preparing 10-15 dancers for onstage performance.</Content>
         </VolStyle>
     );

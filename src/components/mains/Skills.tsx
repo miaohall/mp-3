@@ -44,21 +44,21 @@ const Content = styled.div`
 export default function Skills() {
     return (
         <SkillsStyle>
-                <PageTitle>SKILLS</PageTitle>
+            <PageTitle>SKILLS</PageTitle>
 
-                <Subheaders>Certifications:</Subheaders>
-                <Bullets>
-                    <li>Java Certified Foundations Associate</li>
-                    <br/>
-                    <li>CompTIA IT Fundamentals</li>
-                    <br/>
-                    <li>Microsoft Office Specialist 2016 (Word, Word Expert, Excel, PowerPoint)</li>
-                    <br/>
-                    <li>IC3 Digital Literacy</li>
-                </Bullets>
-                <br/> <br/>
-                <Subheaders>Programming Languages:</Subheaders>
-                <Content>Python, Java, SQL, HTML, CSS</Content>
+            <Subheaders>Certifications:</Subheaders>
+            <Bullets>
+                <li>Java Certified Foundations Associate</li>
+                <br/>
+                <li>CompTIA IT Fundamentals</li>
+                <br/>
+                <li>Microsoft Office Specialist 2016 (Word, Word Expert, Excel, PowerPoint)</li>
+                <br/>
+                <li>IC3 Digital Literacy</li>
+            </Bullets>
+            <br/> <br/>
+            <Subheaders>Programming Languages:</Subheaders>
+            <Content>Python, Java, SQL, HTML, CSS</Content>
         </SkillsStyle>
     );
 }

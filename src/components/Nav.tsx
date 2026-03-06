@@ -19,7 +19,6 @@ const ListStyle = styled.ul`
 
     @media screen and (max-width: 1000px){
         flex-direction: row;
-
     }
 `;
 

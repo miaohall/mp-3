@@ -46,52 +46,52 @@ const ExpBullets = styled.ul`
 export default function Experiences() {
     return (
         <ExpStyle>
-                <PageTitle>WORK EXPERIENCES</PageTitle>
-                <Company>Boston University Faculty of Computing and Data Science</Company>
-                <Role>Algorithms Course Grader | Jan. 2026 - Current | Boston, MA</Role>
-                <ExpBullets>
-                    <li>Graded weekly problem sets and exams for roughly 120 students in "Algorithms for Data Science"
-                        course, ensuring timely and accurate feedback
-                    </li>
-                </ExpBullets>
+            <PageTitle>WORK EXPERIENCES</PageTitle>
+            <Company>Boston University Faculty of Computing and Data Science</Company>
+            <Role>Algorithms Course Grader | Jan. 2026 - Current | Boston, MA</Role>
+            <ExpBullets>
+                <li>Graded weekly problem sets and exams for roughly 120 students in "Algorithms for Data Science"
+                    course, ensuring timely and accurate feedback
+                </li>
+            </ExpBullets>
 
-                <br/>
-                <Company>Elder Home Share and Dance Space</Company>
-                <Role>Website Design and Development Intern | Oct. 2025 - Dec. 2025 | Dublin, Ireland</Role>
-                <ExpBullets>
-                    <li>Managed and enhanced three Wix-hosted websites with SEO-driven design improvements to increase
+            <br/>
+            <Company>Elder Home Share and Dance Space</Company>
+            <Role>Website Design and Development Intern | Oct. 2025 - Dec. 2025 | Dublin, Ireland</Role>
+            <ExpBullets>
+                <li>Managed and enhanced three Wix-hosted websites with SEO-driven design improvements to increase
                         search visibility and user engagement for mobile and desktop users
-                    </li>
-                    <br/>
-                    <li>Analyzed Google Analytics and Google Search Console traffic patterns to identify optimization
-                        opportunities, resulting in data-driven improvements to site navigation and content
-                    </li>
-                    <br/>
-                    <li>Created digital marketing assets using Canva and Instagram, strengthening brand presence</li>
-                </ExpBullets>
-
+                </li>
                 <br/>
-                <Company>Endo, Inc. (now Keenova Therapeutics)</Company>
-                <Role>IT Risk, Privacy, Governance & Security Intern | May 2025 - Aug. 2025 | Malvern, PA</Role>
-                <ExpBullets>
-                    <li>Conducted reviews on third-party vendor cybersecurity assessments to evaluate security
-                        compliance and risk exposure
-                    </li>
-                    <br/>
-                    <li>Enhanced third-party vendor intake process by refining risk classification criteria, increasing
-                        accuracy in identifying inherent risk
-                    </li>
-                    <br/>
-                    <li>Revised vendor cybersecurity assessments to align with pre-defined risk levels of vendors</li>
-                    <br/>
-                    <li>Built and maintained monthly KPI dashboards to provide executive leadership with insights into
-                        cybersecurity posture and trends
-                    </li>
-                    <br/>
-                    <li>Developed comprehensive IT Security training materials including new-hire education, specialized
-                        spear phishing training to high-risk employees, and an Authentication masterclass for the CIO
-                    </li>
-                </ExpBullets>
+                <li>Analyzed Google Analytics and Google Search Console traffic patterns to identify optimization
+                    opportunities, resulting in data-driven improvements to site navigation and content
+                </li>
+                <br/>
+                <li>Created digital marketing assets using Canva and Instagram, strengthening brand presence</li>
+            </ExpBullets>
+
+            <br/>
+            <Company>Endo, Inc. (now Keenova Therapeutics)</Company>
+            <Role>IT Risk, Privacy, Governance & Security Intern | May 2025 - Aug. 2025 | Malvern, PA</Role>
+            <ExpBullets>
+                <li>Conducted reviews on third-party vendor cybersecurity assessments to evaluate security
+                    compliance and risk exposure
+                </li>
+                <br/>
+                <li>Enhanced third-party vendor intake process by refining risk classification criteria, increasing
+                    accuracy in identifying inherent risk
+                </li>
+                <br/>
+                <li>Revised vendor cybersecurity assessments to align with pre-defined risk levels of vendors</li>
+                <br/>
+                <li>Built and maintained monthly KPI dashboards to provide executive leadership with insights into
+                    cybersecurity posture and trends
+                </li>
+                <br/>
+                <li>Developed comprehensive IT Security training materials including new-hire education, specialized
+                    spear phishing training to high-risk employees, and an Authentication masterclass for the CIO
+                </li>
+            </ExpBullets>
         </ExpStyle>
     );
 }
