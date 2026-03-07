@@ -33,7 +33,7 @@ export default function Home() {
     return (
         <MainStyle>
             <WelcomeText>Welcome! A little bit about me...</WelcomeText>
-            <SizeImg src="../../../public/headshot.jpg" alt="Mia O'Halloran"/>
+            <SizeImg src="public/headshot.jpg" alt="Mia O'Halloran"/>
             <p>
                 My name is Mia O'Halloran and I am a junior at Boston University studying Data Science and minoring in
                 Computer Science.
